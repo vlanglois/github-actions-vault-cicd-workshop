@@ -47,7 +47,7 @@ jobs:
           token: ${{ secrets.VAULT_TOKEN }}
           caCertificate: ${{ secrets.VAULT_CA_CERT }}
           secrets: |
-              kv2/data/shared/github/workshop whatever | whatever
+              kv2/data/shared/github/workshop whatever | VAULT_SECRET
 
       - name: Sign in to GitHub Container Registry
         uses: docker/login-action@v2

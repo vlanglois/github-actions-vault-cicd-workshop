@@ -36,7 +36,7 @@ const Home: FunctionComponent = (): ReactElement => {
 
   return (
     <>
-      <Headline>All Rockets available</Headline>
+      <Headline>All Rockets available - Vault Secret: {process.env.VAULT_SECRET}</Headline>
       <OctoCollection
         octoItems={data ?? []}
         onToggleOctocat={handleToggleOctocat}
