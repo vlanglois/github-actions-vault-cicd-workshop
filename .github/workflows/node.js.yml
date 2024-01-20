@@ -49,6 +49,9 @@ jobs:
           secrets: |
               kv2/data/shared/github/workshop whatever | VAULT_SECRET
 
+      - name: Test Secret Retrieval And Print
+        run: echo "${{ env.VAULT_SECRET }}"
+
       - name: Sign in to GitHub Container Registry
         uses: docker/login-action@v2
         with:
