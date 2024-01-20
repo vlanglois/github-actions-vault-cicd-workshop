@@ -44,7 +44,6 @@ jobs:
         uses: hashicorp/vault-action@v2.7.4
         with:
           url: https://vault.indigolabs.ca
-          tlsSkipVerify: true
           token: ${{ secrets.VAULT_TOKEN }}
           caCertificate: ${{ secrets.VAULT_CA_CERT }}
           secrets: |
