@@ -47,7 +47,7 @@ jobs:
           token: ${{ secrets.VAULT_TOKEN }}
           caCertificate: ${{ secrets.VAULT_CA_CERT }}
           secrets: |
-              kv2/data/shared/github/migtool test | VAULT_SECRET
+              kv2/data/shared/indigo/migtool test | VAULT_SECRET
 
       - name: Test Secret Retrieval And Print
         run: |
